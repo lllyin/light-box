@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>light-box</title>
+    <link rel="stylesheet" type="text/css" href="css/light-box.css">
+</head>
+<body>
+
+<div data-role="light-box" class="light-box">
+    <h2>第一组</h2>
+    <ul class="light-box-group">
+        <li>
+            <img src="images/thumb/p1-thumb.jpg" data-source="images/p1.jpg" data-title="第一张图片" data-desc="第一张图片描述">
+        </li>
+        <li>
+            <img src="images/thumb/p2-thumb.jpg" data-source="images/p2.jpg" data-title="第二张图片" data-desc="第二张图片描述">
+        </li>
+        <li>
+            <img src="images/thumb/p3-thumb.jpg" data-source="images/p3.jpg" data-title="第三张图片" data-desc="第三张图片描述">
+        </li>
+        <li>
+            <img src="images/thumb/p4-thumb.jpg" data-source="images/p4.jpg" data-title="第四张图片" data-desc="第四张图片描述">
+        </li>
+    </ul>
+</div>
+<div data-role="light-box" class="light-box">
+    <h2>第二组</h2>
+    <ul class="light-box-group">
+        <li>
+            <img src="images/thumb/p5-thumb.jpg" data-source="images/p5.jpg"  data-title="第2-1图片" data-desc="第2-1图片描述">
+        </li>
+        <li>
+            <img src="images/thumb/p6-thumb.jpg" data-source="images/p6.jpg"  data-title="第2-2张图片" data-desc="第2-2图片描述">
+        </li>
+    </ul>
+</div>
+
+<div class="light-box-model">
+</div>
+<div class="light-box-alert">
+    <img src="images/p1.jpg">
+    <div class="desc">
+    	<h3 class="title">图片标题</h3>
+    	<p class="intro">图片描述</p>
+    </div>
+    <div class="pic-btn pre-pic"><</div>
+    <div class="pic-btn next-pic">></div>
+    <div class="close">关闭</div>
+</div>
+
+<!--
+	如何让弹窗垂直水平居中，同时弹窗随着图片尺寸自适应大小？
+-->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/lightBox.js"></script>
+</body>
+<script>
+    $.lingsPlugin.lightBox();
+</script>
+</html>
+

@@ -1,0 +1,104 @@
+*{ margin:0; padding:0; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0;padding: 0; }
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}
+ol,li,ul{margin:0; padding:0;}
+.light-box{
+	height: 180px;
+}
+.light-box .light-box-group{
+
+}
+.light-box .light-box-group li{
+    float: left;
+    margin-left: 10px;
+}
+.light-box-alert{
+    position: absolute;
+    display: none;
+    max-height: 70%;
+    max-width: 70%;
+    top: 12%;
+    left: 15%;
+    border: none;
+    overflow: hidden;
+}
+/*显示*/
+.light-box-alert-show{
+    display: block;
+}
+
+.light-box-alert img{
+    width: 100%;
+    border-color: transparent;
+}
+.light-box-alert .desc{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 1em;
+	color: #fff;
+	overflow: hidden;
+}
+.light-box-alert .desc h3,p{
+	transform: translateX(-500px);
+}
+.light-box-alert .desc h3{
+	transition:1s ease-in,0.5s ease-out;
+}
+.light-box-alert .desc p{
+	transition:1s ease-in,0.5s ease-out;
+}
+.light-box-alert:hover .desc h3{
+	transform: translateX(0);
+}
+.light-box-alert:hover .desc p{
+	transition-delay: 200ms;
+	transform: translateX(0);
+}
+.light-box-alert .pic-btn{
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 45%;
+	color: #fff;
+    font-size: 3em;
+    cursor: pointer;
+    /*background: rgba(90,90,90,0.5);*/
+    opacity: 0;
+    padding-top: 20%;
+}
+.light-box-alert .close{
+	position: absolute;
+    right: 12px;
+    bottom: 5px;
+    color: #eee;
+    cursor: pointer;
+}
+.light-box-alert .pre-pic{
+    left: 0;
+    text-align: left;
+}
+.light-box-alert .pre-pic:hover{
+   	opacity: 1 !important;
+}
+.light-box-alert .next-pic{
+    right: 0;
+   	text-align: right;
+}
+.light-box-alert .next-pic:hover{
+    opacity: 1 !important;
+}
+
+.light-box-model{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: none;
+	
+}
+.light-box-model-show{
+	display: block;
+}
